@@ -28,8 +28,8 @@ html {
 .card {
   height: auto;
   width: fit-content;
-  min-width: 100px;
-  background-image: url('https://github.com/Fookerydine/bujji/blob/main/img/bujji.jpg?raw=true');
+  min-width: 35rem;
+  background-image: url(https://github.com/Fookerydine/bujji/blob/main/img/bujji.jpg?raw=true.jpg');
   box-shadow: 0vw 0vw 100vw 0vw #000;
 }
 
@@ -49,18 +49,18 @@ html {
 }
 
 .card #message-section::-webkit-scrollbar {
-  width: 100px;
+  width: 10px;
 }
 
 .card #message-section {
-  height: 400px;
+  height: 30rem;
   max-height: 400px;
   overflow-y: auto;
   scrollbar-color: black var(--thumbBG);
 }
 
 .card #message-section::-webkit-scrollbar {
-  width: 30px;
+  width: 3px;
 }
 
 .card #message-section::-webkit-scrollbar-thumb {
@@ -75,7 +75,7 @@ html {
 .card #message-section #user {
   position: relative;
   bottom: 0;
-  min-height: 200px;
+  min-height: 8px;
   background-color: rgb(0, 0, 0);
   color: #fff;
   border-radius: 10px 10px 80px;
@@ -107,7 +107,7 @@ html {
   padding: 8px;
   position: relative;
   margin: 8px 0;
-  max-width: 900px;
+  max-width: 85%;
   word-wrap: break-word;
   z-index: 2;
 }
@@ -128,11 +128,11 @@ html {
   color: #000;
   min-width: 0.5rem;
   outline: none;
-  height: 1rem;
-  max-height: 1rem;
+  height: 2rem;
+  max-height: 2rem;
   max-width: 600px;
   flex: 1;
-  background-color: #058;
+  background-color: rgb(63, 63, 70);
   border: none;
   border-radius: 1rem;
   color: white;
@@ -171,14 +171,14 @@ html {
 }
 
 .circle {
-  background-color: red;
-  border-radius: 1000px;
+  background-color: rgb(57, 57, 150);
+  border-radius: 10px;
   color: #fff;
 }
 
 input:focus, .circle:focus, .send:focus , button:focus {
   border: 1px solid white !important;
-  border-radius: 100px;
+  border-radius: 10px;
   outline: none; 
 }
 
@@ -208,10 +208,10 @@ input:focus, .circle:focus, .send:focus , button:focus {
   100% { opacity: 0.5; }
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 80px) {
   .card {
-    width: 750px;
-    height: 750px;
+    width: 80px;
+    min-height: 30px;
     font-size: 1.2vw;
   }
 
