@@ -285,6 +285,9 @@ input:focus, .rectangle:focus, .send:focus , button:focus {
     justify-content: center;
     align-items: center;
   }
+  .Button #input-section{
+    color: red;
+  }
 
 .img{
   height: 0px;
@@ -316,7 +319,7 @@ onclick="send(this.getAttribute('data-message'))"></button>
 <div id="input-section">
 <input id="user-input" type="text" placeholder="Type a message..." autocomplete="on" autofocus="autofocus" tabindex="3" />
 <button type="submit" class="send sendmessage" onclick="sendMessage()" tabindex="3">enter
-<div class="rectangle"><i class="zmdi zmdi-mail-send" style="font-size: 1.5rem; margin-left: 0.2rem;"></i>
+<div class="rectangle"><i class="zmdi zmdi-mail-send" style="font-size: 1.5rem; margin-left: 0.2rem;">ENTER</i>
 </div>
 enter</button>
 </div>
