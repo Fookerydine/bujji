@@ -29,7 +29,7 @@ html {
   height: auto;
   width: fit-content;
   min-width: 35rem;
-  background-image: url(https://github.com/Fookerydine/bujji/blob/main/img/bujji.jpg?raw=true.jpg');
+  background-image: url(https://github.com/Fookerydine/bujji/blob/main/img/bujji.jpg?raw=true');
   box-shadow: 0vw 0vw 100vw 0vw #000;
 }
 
@@ -151,32 +151,32 @@ html {
   outline: none;
 }
 
-.circle:hover,
-.circle:active {
+.rectangle:hover,
+.rectangle:active {
   opacity: 0.7;
 }
 
-.card .send .circle {
+.card .send .rectangle {
   position: relative;
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 10rem;
+  height: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.card .send .circle i {
+.card .send .rectangle i {
   font-size: 1.5rem;
   margin-left: -0.2rem;
 }
 
-.circle {
+.rectangle {
   background-color: rgb(57, 57, 150);
   border-radius: 10px;
   color: #fff;
 }
 
-input:focus, .circle:focus, .send:focus , button:focus {
+input:focus, .rectangle:focus, .send:focus , button:focus {
   border: 1px solid white !important;
   border-radius: 10px;
   outline: none; 
@@ -275,7 +275,7 @@ input:focus, .circle:focus, .send:focus , button:focus {
     padding-left: 1.2rem;
   }
 
-  .card .send .circle {
+  .card .send .rectangle {
     width: 2.6px;
     height: 2.6px;
   }
@@ -300,7 +300,7 @@ input:focus, .circle:focus, .send:focus , button:focus {
 <div class="card">
 <div id="botheader">
 <h1>BUJJI</h1>
-<div class="circle refresh"><i class="zmdi zmdi-refresh-sync"
+<div class="rectangle refresh"><i class="zmdi zmdi-refresh-sync"
   style="font-size: 1.5rem; margin-left: 0.2px;"></i></div>
 </div>
 
@@ -315,10 +315,10 @@ onclick="send(this.getAttribute('data-message'))"></button>
 </div>
 <div id="input-section">
 <input id="user-input" type="text" placeholder="Type a message..." autocomplete="on" autofocus="autofocus" tabindex="3" />
-<button type="submit" class="send sendmessage" onclick="sendMessage()" tabindex="3">
-<div class="circle"><i class="zmdi zmdi-mail-send" style="font-size: 1.5rem; margin-left: 0.2rem;"></i>
+<button type="submit" class="send sendmessage" onclick="sendMessage()" tabindex="3">enter
+<div class="rectangle"><i class="zmdi zmdi-mail-send" style="font-size: 1.5rem; margin-left: 0.2rem;"></i>
 </div>
-</button>
+enter</button>
 </div>
 </div>
 </div>
