@@ -5,69 +5,37 @@
 <style>
 box-sizing: inherit;
 }
-.column {
+.row{
+  
+}
+.column{
   float: left;
-  width: 50px;
+  width: 310px;
   margin-bottom: 26px;
-  padding: 0 8px;
-  }
-
-.card {
+  padding: 0 10px;
+}
+.card{
   box-shadow: 0 8px 16px 0 rgba(1.6, 1.6, 1.6, 1.6);
   margin: 4px;
 }
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: black;
-  color: yellow;
+.botbody{
+  background-image: url('https://github.com/Fookerydine/bujji/blob/main/img/bujji.jpg?raw=true');
 }
-
-.container {
-  padding: 16px;
-  
+button{
+  background-color: blue;
 }
-
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
-.title {
-  color: grey;
-}
-
-button {
-  background-color: blue;
-}
-
-.button:hover {
-  background-color: blue;
-}
-input {
-    padding: 0.2rem;
-    padding-left: 1.2rem;
-  }
-  .typing-animation {
+ .typing-animation {
   animation: typing 2s infinite;
 }
-/* typing animation */
-@keyframes typing {
-  0% { opacity: 0.5; }
-  50% { opacity: 1; }
-  100% { opacity: 0.5; }
-}
-  .card #botheader {
-    font-size: 1.8rem;
-  }
-
-
   .card #message-section {
-    height: 140vw;
+    height: 130vw;
   }
-  .card #message-section::-webkit-scrollbar {
+    .card #message-section::-webkit-scrollbar {
   width: 10px;
 }
 
@@ -99,7 +67,7 @@ input {
   color: #fff;
   border-radius: 10px 10px 80px;
   margin: 0.8rem 0.4rem 0rem;
-  min-width: 250px;
+  min-width: 50px;
 }
 
 .card #message-section #bot {
@@ -130,30 +98,16 @@ input {
   word-wrap: break-word;
   z-index: 2;
 }
-
-  .botbody {
-  background-image: url('https://github.com/Fookerydine/bujji/blob/main/img/bujji.jpg?raw=true');
-  box-shadow: 0vw 0vw 100vw 0vw #555;
-  }
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
 </style>
-<title>BUJJI</title>
-</head>
-<body style="color: blue;">
-    
-<div class="row">
+<body>
+  
+  <div class="row">
 <div class="column">
 <div class="card">
 <div class="botbody">
   <p></p>
-
-<div id="message-section">
+  
+  <div id="message-section">
 <!-- Chat messages will be displayed here -->
 </div>
 <div id="input-section">
@@ -166,7 +120,6 @@ input {
   </div>
   </div>
   
-
     <script>
         function send(message) {
             var userInput = document.getElementById("user-input");
